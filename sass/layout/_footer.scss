@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--gray);
+  border-top: 4px solid var(--big-dark);
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+
+  @media screen and (max-width: 37.5em) {
+    border-top: none;
+    background: var(--bg-color);
+  }
+
+  &__year,
+  &__milage,
+  &__type {
+    &-main {
+      color: var(--big-dark);
+      font-weight: bold;
+      font-size: 1.5rem;
+
+      @media screen and (max-width: 37.5em) {
+        font-size: 18px;
+      }
+    }
+
+    &-sub {
+      color: var(--big-dark);
+      font-weight: medium;
+      font-size: 1.125rem;
+
+      @media screen and (max-width: 37.5em) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    border-bottom: 3px solid var(--big-dark);
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 37.5em) {
+      display: none;
+    }
+
+    &-main {
+      font-weight: medium;
+      font-size: 1.5rem;
+      line-height: 1.7;
+    }
+
+    [class^="arrow"] {
+      margin-left: 0.5rem;
+      display: block;
+    }
+  }
+}

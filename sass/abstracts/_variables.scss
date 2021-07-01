@@ -1,0 +1,14 @@
+:root {
+  --bg-color: #e9ecef;
+  --big-dark: #343a40;
+  --light-dark: #495057;
+  --gray: #ced4da;
+  --light-gray: #6c757d;
+  --custom-white: #f8f9fa;
+  // gradient
+  --shadow: radial-gradient(
+    50% 50% at 50% 50%,
+    #939da7 0%,
+    rgba(206, 212, 218, 0) 100%
+  );
+}
